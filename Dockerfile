@@ -2,5 +2,5 @@ FROM amazoncorretto:17
 LABEL authors="prink"
 
 WORKDIR /app
-COPY target/webrisetest.jar app.jar
+COPY build/libs/WebRiseTest.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
