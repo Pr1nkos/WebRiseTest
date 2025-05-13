@@ -1,0 +1,127 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-test-users-and-subscriptions
+      author: prink
+      runOnChange: true
+      changes:
+        - insert:
+            tableName: app_users
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: name
+                  value: "test6"
+              - column:
+                  name: password
+                  value: "1212"
+        - insert:
+            tableName: app_users
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: name
+                  value: "test10"
+              - column:
+                  name: password
+                  value: "1212"
+        - insert:
+            tableName: app_users
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: name
+                  value: "test12"
+              - column:
+                  name: password
+                  value: "1212"
+        - insert:
+            tableName: app_users
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: name
+                  value: "test9"
+              - column:
+                  name: password
+                  value: "1223"
+
+        - insert:
+            tableName: subscription
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: name
+                  value: "YANDEX_MUSIC"
+              - column:
+                  name: user_id
+                  valueNumeric: 1
+        - insert:
+            tableName: subscription
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: name
+                  value: "YANDEX_MUSIC"
+              - column:
+                  name: user_id
+                  valueNumeric: 2
+        - insert:
+            tableName: subscription
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: name
+                  value: "YANDEX_MUSIC"
+              - column:
+                  name: user_id
+                  valueNumeric: 3
+        - insert:
+            tableName: subscription
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 4
+              - column:
+                  name: name
+                  value: "NETFLIX"
+              - column:
+                  name: user_id
+                  valueNumeric: 3
+        - insert:
+            tableName: subscription
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 5
+              - column:
+                  name: name
+                  value: "NETFLIX"
+              - column:
+                  name: user_id
+                  valueNumeric: 1
+        - insert:
+            tableName: subscription
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 6
+              - column:
+                  name: name
+                  value: "NETFLIX"
+              - column:
+                  name: user_id
+                  valueNumeric: 4
