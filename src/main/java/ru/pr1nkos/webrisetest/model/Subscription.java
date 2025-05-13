@@ -1,5 +1,6 @@
 package ru.pr1nkos.webrisetest.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -19,5 +20,7 @@ public class Subscription {
     String name;
 
     @ManyToOne
-    User userId;
+    @JoinColumn(name = "user_id")
+    @JsonIgnore
+    private User userId;
 }

@@ -1,3 +1,10 @@
 spring:
   application:
     name: WebRiseTest
+  datasource:
+    url: jdbc:postgresql://localhost:5432/web_rise
+    username: web_rise
+    password: postgres
+logging:
+  level:
+    root: info
