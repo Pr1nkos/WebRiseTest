@@ -1,5 +1,8 @@
 **Документация**
-[Apidog](https://app.apidog.com/invite
+[Apidog](https://app.apidog.com)
+
+**Настройка**
+Скопируйте `.env.example` в `.env` и задайте `DB_PASSWORD` (используется и приложением, и docker-compose).
 
 **Запуск**
 1. Через IDE - запуск класса ```WebRiseTestApplication```
